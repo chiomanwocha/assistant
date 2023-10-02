@@ -1,88 +1,21 @@
-# Dictionary web app
-
-This is a solution to the [Dictionary web app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL).
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-<img src="https://github.com/thelouisgram/dictionary-web-app/blob/master/src/assets/challenge.jpg">
-
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#Screenshot)
-  - [Links](#Links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-## Overview
-
-### The challenge
-
-Your users should be able to:
-
-- Search for words using the input field
-- See the Free Dictionary API's response for the searched word
-- See a form validation message when trying to submit a blank form
-- Play the audio file for a word when it's available
-- Switch between serif, sans serif, and monospace fonts
-- Switch between light and dark themes
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-
-Bonus: Have the correct color scheme chosen for them based on their computer preferences. Hint: Research prefers-color-scheme in CSS.
-
-## Overview
-
-### Screenshot
-
-                This is a desktop View.
-                 
-<img src="https://github.com/thelouisgram/dictionary-web-app/blob/master/src/assets/desktop-view2.png">
-
-                 This is a tablet view.
-                 
-  <p align="center">
-   <img src="https://github.com/thelouisgram/dictionary-web-app/blob/master/src/assets/tablet-view.png">
-  </p>
-  
-  
-                 This is a mobile view.
-                 
-  <p align="center">
-   <img src="https://github.com/thelouisgram/dictionary-web-app/blob/master/src/assets/mobile-view.jpg" height="500px">
-  </p>
-  
-### Links
-
-- [Live Site URL](https://dictionary-web-app-weld.vercel.app/)
-
-## My process
-
-### Built with
-
-- TailwindCss
-- [React](https://reactjs.org/) - JS library
-- FetchAPI
-- Redux
-- Axios
-- Framer-motion
-
-### What I learned
-
-- Implementing fetch API in Redux and Axios on my own
-- How to implement Redux
-- Full understanding certain array methods, lile newArray, find, filter, flat
-
-### Useful resources
-
-- ChatGPT
-
-## Author
-
-- Frontend Mentor -https://www.frontendmentor.io/profile/thelouisgram
+## Task: Build an On-Page Assistant
+### Objective: 
+Develop a proof-of-concept for an on-page assistant that appears in the lower left corner of a web page. This assistant should be a transparent, moving video (not an image) and provide helpful information to users.
+### Requirements:
+1. Design and create an animated, transparent assistant that appears in the lower left corner of a web page.
+2. When a button is clicked on the page, the assistant should move to the button and explain what that button does.
+3. Implement a hover icon that, when pressed, allows the assistant to provide explanations for certain elements when users hover over them.
+4. For extra credit, add animations to make the assistant's movement to the button look natural and engaging.
+5. Explore the use of dynamic 3D effects for additional bonus points.
+6. Conduct research to find innovative techniques and technologies that can enhance the functionality and appearance of the assistant.
+### Acceptance Criteria:
+1. The on-page assistant is integrated into the web page as a transparent, moving element.
+2. The assistant provides clear and helpful explanations when users click on buttons or hover over specific elements.
+3. When a button is clicked, the assistant smoothly moves to the button and delivers a concise explanation of its function.
+4. The hover icon is responsive and allows users to easily access explanations for relevant elements.
+5. Animations are implemented to enhance the assistant's movement to buttons and overall user experience.
+6. If dynamic 3D effects are attempted, they are well-executed and enhance the assistant's presentation.
+7. The assistant's appearance and behavior are in accordance with the provided design specifications.
+8. Users find the assistant's interactions intuitive and helpful.
+9. Any technical challenges or limitations are documented, and alternative solutions are explored as part of the research effort.
+10. The on-page assistant project is presented as a proof-of-concept with room for potential future enhancements based on user feedback.
