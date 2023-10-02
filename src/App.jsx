@@ -40,12 +40,12 @@ const App = () => {
     right: position.right || "auto",
     bottom: position.bottom || "5%",
   };
-  let src = "/src/assets/wave-92_256.gif"; 
+  let src = "wave-92_256.gif"; 
 
   if (display) {
-    src = "/src/assets/wave-92_256.gif";
+    src = "wave-92_256.gif";
   } else if (hovering && hover) {
-    src = "/src/assets/wave-92_256.gif";
+    src = "wave-92_256.gif";
   }
 
   return (
