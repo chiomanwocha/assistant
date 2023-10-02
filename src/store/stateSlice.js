@@ -26,10 +26,10 @@ const stateSlice = createSlice({
     // Input form value state
     formWord: "",
     // Hover start
-    hover: false,
+    hover: true,
     // Position state
     position: {},
-    hovering: false,
+    hovering: true,
     message: '', 
     display: false,
   },
@@ -112,3 +112,8 @@ export const {
   setMessage,
   setDisplay
 } = stateSlice.actions;
+
+const initialState = {
+  name: "", 
+};
+

@@ -1,41 +1,41 @@
-import { useSelector } from "react-redux";
-import Word from "./contentComponents/Word";
-import Error from "./contentComponents/Error";
-import Loading from "./contentComponents/Loading";
 import { AnimatePresence, motion } from "framer-motion";
 import ToolTip from "./ToolTip";
+import CursorToolTip from "./CursorToolTip";
 
 const Content = () => {
-  // Destructured global state
-  const { success, loading, error } = useSelector((state) => state.app);
-
   return (
-    // Content Container
-    <section className="w-full h-auto">
-      {/* Conditional rendering of loading, content and error when true */}
-      {loading ? (
-        <Loading />
-      ) : success ? (
-        <AnimatePresence>
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 10 }}
-            transition={{ ease: "easeInOut", duration: 0.5 }}
-          >
-            <div>
-              <div className="flex justify-between items-center">
-                {/* Searched Word */}
-                <ToolTip title="This is your name">
-                  <Word />
-                </ToolTip>
-              </div>
+    <section className="w-full h-auto text-white text-[20px]">
+      <AnimatePresence>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 10 }}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
+        >
+          <div>
+            <div className="flex justify-between items-center">
+              <ToolTip title="This are the things I love about you">
+                {[
+                  `You're kind`,
+                  `You're sweet`,
+                  `You're amazing`,
+                  `You make me laugh hard`,
+                ].map((item, index) => (
+                  <div key={item} className="cursor-default">
+                    <CursorToolTip title="What I love">
+                      <ToolTip title="What I love">
+                        <p>
+                          {index + 1}. {item}
+                        </p>
+                      </ToolTip>
+                    </CursorToolTip>
+                  </div>
+                ))}
+              </ToolTip>
             </div>
-          </motion.div>
-        </AnimatePresence>
-      ) : (
-        error && <Error />
-      )}
+          </div>
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 };

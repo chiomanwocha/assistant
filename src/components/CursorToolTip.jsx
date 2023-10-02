@@ -1,19 +1,18 @@
-import React, { useRef, useState, useEffect } from 'react'; // Import useEffect and useState
-import { useDispatch } from 'react-redux'; // Import useDispatch for dispatching actions
+import React, { useRef, useState, useEffect } from 'react'; 
+import { useDispatch } from 'react-redux';
 import { setMessage, setPosition, setDisplay } from '../store/stateSlice';
 
 const CursorToolTip = ({ children, title }) => {
     const toolTipRef = useRef();
     const container = useRef();
-    const dispatch = useDispatch(); // Get the dispatch function
+    const dispatch = useDispatch(); 
 
     const [tooltipPosition, setTooltipPosition] = useState({ left: 0, top: 0, right: 0, bottom: 0 });
 
 
     useEffect(() => {
-        // Dispatch the setPosition action with the tooltipPosition
         dispatch(setPosition(tooltipPosition));
-    }, [dispatch, tooltipPosition]); // Add dispatch and tooltipPosition to the dependency array
+    }, [dispatch, tooltipPosition]); 
 
     return (
         <div
@@ -36,7 +35,6 @@ const CursorToolTip = ({ children, title }) => {
             }}
         >
             {children}
-            {/* Add content for your tooltip here */}
             <span ref={toolTipRef}
                 className="invisible group-hover:visible w-auto flex-wrap z-[10] opacity-0 group-hover:opacity-0 transition bg-purple text-white p-1 mt-2 rounded absolute whitespace-nowrap"
             >

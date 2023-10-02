@@ -1,11 +1,18 @@
-import logo from "../../assets/logo.svg";
+import CursorToolTip from "../CursorToolTip";
 import ToolTip from "../ToolTip";
 
 const Logo = () => {
   return (
-    <ToolTip title="This is the logo">
-        <p className="text-white cursor-pointer text-[36px] font-bold">Chioma</p>
-    </ToolTip>
+    <CursorToolTip title="This is the logo">
+      <ToolTip title="This is the logo">
+        <div className="w-[5vw]">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStr8r7MkVyBhospr1b0oUsU0W9nmAgXqTAjw&usqp=CAU"
+            alt="logo"
+          />
+        </div>
+      </ToolTip>
+    </CursorToolTip>
   );
 };
 

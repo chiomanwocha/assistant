@@ -1,10 +1,5 @@
-import ThemeButton from "./headerComponents/ThemeButton";
 import Logo from "./headerComponents/Logo";
-import ThemeIcon from "./headerComponents/ThemeIcon";
-import FontFormContainer from "./headerComponents/fontFormComponents/FontFormContainer";
 import { AnimatePresence, motion } from "framer-motion";
-import CursorToolTip from "./CursorToolTip";
-import ToolTip from "./ToolTip";
 
 const Header = () => {
   return (
