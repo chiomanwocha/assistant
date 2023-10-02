@@ -1,4 +1,6 @@
 ## Task: Build an On-Page Assistant
+<img width="1440" alt="Screenshot 2023-10-02 at 12 09 43" src="https://github.com/chiomanwocha/assistant/assets/77916165/c94e36d7-9c0e-4c10-b463-22588ba4f656">
+
 ### Objective: 
 Develop a proof-of-concept for an on-page assistant that appears in the lower left corner of a web page. This assistant should be a transparent, moving video (not an image) and provide helpful information to users.
 ### Requirements:
